@@ -95,7 +95,7 @@
                     {% for title, link in MENUITEMS %}
                         <li><a href="{{ link }}">{{ title }}</a></li>
                     {% endfor %}
-
+		<!--
                     {% if DISPLAY_PAGES_ON_MENU %}
                         {% for p in PAGES %}
                             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
@@ -107,6 +107,7 @@
                             {% endfor %}
                         {% endif %}
                     {% endif %}
+-->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -131,7 +132,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!--<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">-->
+		<div class="col-lg-8 col-md-10">
                     <ul class="list-inline text-center">
                     {% if TWITTER_URL %}
                         <li>
