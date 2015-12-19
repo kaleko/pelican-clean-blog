@@ -33,7 +33,7 @@
     {% if article.header_cover %}
         <header class="intro-header" style="background-image: url('{{ article.header_cover }}')">
     {% else %}
-        <header class="intro-header" style="background-image: url('{{ SITEURL }}/{{ THEME_STATIC_DIR }}/images/post-bg.jpg')">
+        <header class="intro-header" style="background-image: url('{{ SITEURL }}/images/post-bg.jpg')">
     {% endif %}
         <div class="container">
             <div class="row">
@@ -45,7 +45,7 @@
                         {% endif %}
                         <span class="meta">Posted by
                             {% for author in article.authors %}
-                                <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                                <a href="{{ HOMEPAGEURL }}/#about">{{ author }}</a>
                             {% endfor %}
                              on {{ article.locale_date }}
                         </span>
